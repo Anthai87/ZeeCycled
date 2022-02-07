@@ -1,6 +1,7 @@
+using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using ZeeCycled.Data;
+
 
 namespace ZeeCycled
 {

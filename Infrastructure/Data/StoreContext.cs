@@ -1,7 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using ZeeCycled.Entities;
+﻿using Core.Entities;
+using Microsoft.EntityFrameworkCore;
 
-namespace ZeeCycled.Data;
+
+namespace Infrastructure.Data;
 
 public class StoreContext : DbContext
 {

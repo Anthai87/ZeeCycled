@@ -1,7 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using ZeeCycled.Data;
-using ZeeCycled.Entities;
-using System.Threading.Tasks;
+﻿using Core.Entities;
+using Infrastructure.Data;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace ZeeCycled.Controllers

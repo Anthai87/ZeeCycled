@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace ZeeCycled.Data.Migrations
+namespace Infrastructure.Data.Migrations
 {
     public partial class InitialCreate : Migration
     {
