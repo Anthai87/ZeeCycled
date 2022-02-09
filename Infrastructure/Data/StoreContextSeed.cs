@@ -12,7 +12,6 @@ namespace Infrastructure.Data
         // to create a new instance of the class. 
         public static async Task SeedAsync(StoreContext context, ILoggerFactory loggerFactory)
         {
-
             try
             {
                 // checks if we got any product brands in our database.
@@ -27,6 +26,8 @@ namespace Infrastructure.Data
                     }
                     await context.SaveChangesAsync();
                 }
+
+
                 if (!context.ProductTypes.Any())
                 {
                     var typesData = File.ReadAllText("../Infrastructure/Data/SeedData/types.json");
@@ -38,6 +39,8 @@ namespace Infrastructure.Data
                     }
                     await context.SaveChangesAsync();
                 }
+
+
                  if (!context.Products.Any())
                 {
                     var productsData = File.ReadAllText("../Infrastructure/Data/SeedData/products.json");
@@ -54,7 +57,6 @@ namespace Infrastructure.Data
                 var logger = loggerFactory.CreateLogger<StoreContextSeed>();
                 logger.LogError(ex.Message);
             }
-
         }
     }
 }
